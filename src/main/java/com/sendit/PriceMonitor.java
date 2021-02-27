@@ -80,7 +80,7 @@ public class PriceMonitor implements HttpFunction {
                         .build();
 
         MonitoredResource resource =
-                MonitoredResource.newBuilder().setType("send_it").build();
+                MonitoredResource.newBuilder().setType("generic_task").build();
         return TimeSeries.newBuilder()
                 .setMetric(metric)
                 .setResource(resource)

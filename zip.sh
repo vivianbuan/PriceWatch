@@ -1,1 +1,3 @@
-zip -r ../function-source.zip pom.xml src/
+FILENAME=function-source.zip
+rm ../$FILENAME
+zip -r ../$FILENAME  pom.xml src/
